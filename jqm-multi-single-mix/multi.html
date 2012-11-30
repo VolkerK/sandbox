@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+	<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+</head>
+<body>
+	<div data-role="page" id="page">
+		<div data-role="header">
+			<a href="#" data-rel="back">Back</a>
+			<h1>Multi Page</h1>
+		</div>
+		<div data-role="content">
+			<p>
+				When navigating inside the multipage the back button goes back to the recent multipage.<br/>
+				But what to do when we want to go back to the single page ?
+			</p>
+			<br/>
+			<p>
+				<ul data-role="listview">
+					<li><a href="#pos1">Position 1</a></li>
+					<li><a href="#pos2">Position 2</a></li>
+				</ul>
+			</p>
+		</div>
+	</div>
+	<div data-role="page" id="pos1">
+		<div data-role="header">
+			<a href="#page">Backlink with hash</a>
+			<h1>Pos 1</h1>
+		</div>
+		<div data-role="content">
+			This is a multipage, the back link is done using hash (#page)
+		</div>
+	</div>
+	<div data-role="page" id="pos2">
+		<div data-role="header">
+			<a href="multi.html">Back with url</a>
+			<h1>Pos 2</h1>
+		</div>
+		<div data-role="content">
+			This is a multipage, the back link is done using an url (multi.html)
+		</div>
+	</div>
+</body>
+</html>
